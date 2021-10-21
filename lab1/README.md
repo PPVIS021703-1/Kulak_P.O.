@@ -17,4 +17,5 @@
 верхняя треугольная, нижняя треугольная);
 - транспонированние матрицы;
 
-Использование библиотеки для unit-тестов [doctest.h](https://github.com/onqtam/doctest/releases)
+Использование библиотеки для unit-тестов [doctest.h](https://github.com/onqtam/doctest/releases)<br/> 
+Файл ppvix.bak документация к самому коду
