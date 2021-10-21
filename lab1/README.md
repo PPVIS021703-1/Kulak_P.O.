@@ -18,4 +18,4 @@
 - транспонированние матрицы;
 
 Использование библиотеки для unit-тестов [doctest.h](https://github.com/onqtam/doctest/releases)<br/> 
-Файл ppvix.bak документация к самому коду
+Файл ppvis.bak документация к самому коду
