@@ -1,3 +1,7 @@
 ## Лабораторные работы сделанные Кулаком П.О. и Чижом Г.И. (1-ая подгруппа)
 
-- [Лаб. работа №1](https://github.com/onqtam/doctest/releases) (Вещественная матрица)
+- [Лаб. работа №1](https://github.com/PPVIS021703-1/Kulak_P.O._and_Chizh_G.I./tree/lab1) (Вещественная матрица)
+
+- [Лаб. работа №2](https://github.com/PPVIS021703-1/Kulak_P.O._and_Chizh_G.I./tree/lab2) (Кулинарные блюда и рецепты)
+
+- [Лаб. работа №3](https://github.com/PPVIS021703-1/Kulak_P.O._and_Chizh_G.I./tree/lab3) (Модель банкомата БеларусьБанк)
