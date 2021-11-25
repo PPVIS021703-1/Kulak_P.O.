@@ -15,7 +15,7 @@ void check::checking(){
     ifstream foutw;
     try
     {
-        foutw.open("check.txt",ofstream::app);
+        foutw.open("check.txt",ifstream::in);
 
     }
     catch (const std::exception& ex)
@@ -44,11 +44,11 @@ void check::checking(){
                     if (chock.operation == 3){
                         cout<<"RM-number: "<< chock.rm_number << " "<<"  Перевод с карты на карту"<<endl;
                     }
-                    if (chock.operation == 5){
-                        cout<<"RM-number: "<< chock.rm_number << " "<<"  Просмотр средств"<<endl;
-                    }
                     if (chock.operation == 4){
                         cout<<"RM-number: "<< chock.rm_number << " "<<"  Пополнение счёта телефона"<<endl;
+                    }
+                    if (chock.operation == 5){
+                        cout<<"RM-number: "<< chock.rm_number << " "<<"  Просмотр средств"<<endl;
                     }
                     if (chock.operation == 6){
                         cout<<"RM-number: "<< chock.rm_number << " "<<"  Неудалась операция"<<endl;

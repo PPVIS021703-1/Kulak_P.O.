@@ -52,9 +52,11 @@ void operation::addordeletemoneytofromdepozit()
                     foutc.write((char *) &chock, sizeof(class check));
                 }else{
                     chock.operation = 6;
+                    cout<<"Не получилось :-(\n";
                     cout << "RM-number "<< chock.rm_number <<endl;
                     foutc.write((char*)&chock, sizeof(class check));
                 }
+                fout1.write((char*)&person, sizeof(user));
             }
 			if (i == 2)
 			{
@@ -66,11 +68,12 @@ void operation::addordeletemoneytofromdepozit()
                 chock.operation = 2;
                 cout << "RM-number "<< chock.rm_number <<endl;
                 foutc.write((char*)&chock, sizeof(class check));
+                fout1.write((char*)&person, sizeof(user));
 			}
             if(i == 3){
                 cout<<"your friends login"<<endl;
                 cin>>number2;
-                while (fin2.read((char*)&person2, sizeof(user)))
+                while (fin1.read((char*)&person2, sizeof(user)))
                 {
                 if (person2.numberuser == number2)
                 {
@@ -84,14 +87,16 @@ void operation::addordeletemoneytofromdepozit()
                         person2.data = templmoney2 + k;
                         cout << "RM-number " << chock.rm_number << endl;
                         foutc.write((char *) &chock, sizeof(class check));
+                        fout1.write((char*)&person2, sizeof(user));
                     }else{
                         chock.operation = 6;
                         cout << "RM-number "<< chock.rm_number <<endl;
                         foutc.write((char*)&chock, sizeof(class check));
                     }
                 }
+             }
+                fout1.write((char*)&person, sizeof(user));
             }
-        }
         if (i == 4)
             {
                 templmoney = person.data;
@@ -122,6 +127,7 @@ void operation::addordeletemoneytofromdepozit()
                     cout << "RM-number "<< chock.rm_number <<endl;
                     foutc.write((char*)&chock, sizeof(class check));
                 }
+                fout1.write((char*)&person, sizeof(user));
             }
         if (i == 5){
             cout << "New password" << endl;
@@ -130,9 +136,9 @@ void operation::addordeletemoneytofromdepozit()
             chock.operation = 7;
             cout << "RM-number "<< chock.rm_number <<endl;
             foutc.write((char*)&chock, sizeof(class check));
+            fout1.write((char*)&person, sizeof(user));
         }
-      
-			fout1.write((char*)&person, sizeof(user));
+
 		}
 		}
 		catch (const std::exception& ex)
@@ -180,7 +186,7 @@ void operation::printbalance()
 
 	try
 	{
-		finn.open("person.txt", ofstream::app);
+		finn.open("person.txt", ifstream::in);
 
 	}
 	catch (const std::exception& ex)

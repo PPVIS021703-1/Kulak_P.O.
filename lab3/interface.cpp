@@ -11,7 +11,7 @@ void interface::database()
 	ifstream fin;
 	try
 	{
-		fin.open("person.txt", ofstream::app);
+		fin.open("person.txt", ifstream::in);
 
 	}
 	catch (const std::exception& ex)
