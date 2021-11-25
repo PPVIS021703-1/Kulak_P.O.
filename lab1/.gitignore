@@ -1,8 +1,0 @@
-cmake-build-debug/
-html/
-latex/
-test/
-CMakeLists.txt
-doctest.h
-input.txt
-input_test.txt
